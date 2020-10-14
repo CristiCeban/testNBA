@@ -4,7 +4,7 @@ import {createAppContainer} from "react-navigation";
 import {Root} from 'native-base';
 import Teams from "../screens/Teams";
 import Players from "../screens/Players";
-import Player from "../screens/Player";
+
 
 const HomeNav = createStackNavigator({
     Teams: {
@@ -13,10 +13,11 @@ const HomeNav = createStackNavigator({
     Players: {
         screen: Players,
     },
-    Player: {
-        screen: Player,
-    },
-},{initialRouteName: 'Teams'})
+},
+    {initialRouteName: 'Teams',
+    defaultNavigationOptions: {
+        headerTitleAlign: 'center'
+    }})
 
 const AppContainer = createAppContainer(HomeNav);
 

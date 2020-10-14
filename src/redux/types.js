@@ -1,0 +1,2 @@
+export const GET_TEAMS = 'TEAMS/GET_TEAMS'
+export const GET_PLAYERS = 'PLAYERS/GET_PLAYERS'
